@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".fragment.PlansFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            app:cardCornerRadius="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0">
+
+            <ViewFlipper
+                android:id="@+id/bgScroll"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:autoStart="true"
+                android:flipInterval="5000"
+                android:inAnimation="@anim/slide_in_right"
+                android:outAnimation="@android:anim/slide_out_right">
+
+                <ImageView
+                    android:id="@+id/dbBg"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/loginbg2"
+                    tools:ignore="ContentDescription" />
+
+                <ImageView
+                    android:id="@+id/dbBg1"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/loginbg2"
+                    tools:ignore="ContentDescription" />
+
+                <ImageView
+                    android:id="@+id/dbBg2"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/loginbg2"
+                    tools:ignore="ContentDescription" />
+
+                <ImageView
+                    android:id="@+id/dbBg3"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/loginbg2"
+                    tools:ignore="ContentDescription" />
+
+                <ImageView
+                    android:id="@+id/dbBg4"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/loginbg2"
+                    tools:ignore="ContentDescription" />
+
+            </ViewFlipper>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/plan_title"
+            android:textColor="@color/blue_400"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/input_planTitle"
+            app:layout_constraintHorizontal_bias="0.01"
+            app:layout_constraintLeft_toLeftOf="@id/input_planTitle"
+            app:layout_constraintRight_toRightOf="@id/input_planTitle" />
+
+        <EditText
+            android:id="@+id/input_planTitle"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:background="@drawable/input_shape"
+            android:hint="@string/source_location"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:maxLength="50"
+            android:paddingStart="35dp"
+            android:paddingEnd="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/blue_800"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:layout_marginTop="40dp"
+            app:layout_constraintBottom_toTopOf="@id/input_source"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardview"
+            app:layout_constraintVertical_bias="0.3"
+            app:layout_constraintWidth_percent=".87" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/source_location"
+            android:textColor="@color/blue_400"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/input_source"
+            app:layout_constraintHorizontal_bias="0.01"
+            app:layout_constraintLeft_toLeftOf="@id/input_source"
+            app:layout_constraintRight_toRightOf="@id/input_source" />
+
+        <EditText
+            android:id="@+id/input_source"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:background="@drawable/input_shape"
+            android:hint="@string/source_location"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:maxLength="50"
+            android:paddingStart="35dp"
+            android:paddingEnd="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/blue_800"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:layout_marginTop="40dp"
+            app:layout_constraintBottom_toTopOf="@id/add_halts"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/input_planTitle"
+            app:layout_constraintVertical_bias="0.3"
+            app:layout_constraintWidth_percent=".87" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/add_halts"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bg"
+            android:layout_marginTop="20dp"
+            app:layout_constraintBottom_toTopOf="@id/input_destination"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/input_source"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <View
+            android:layout_width="20dp"
+            android:layout_height="0dp"
+            android:background="@drawable/dotted_line"
+            app:layout_constraintBottom_toTopOf="@id/add_halts"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/input_source" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="4dp"
+            android:src="@drawable/ic_add"
+            app:layout_constraintBottom_toBottomOf="@id/add_halts"
+            app:layout_constraintLeft_toLeftOf="@id/add_halts"
+            app:layout_constraintRight_toRightOf="@id/add_halts"
+            app:layout_constraintTop_toTopOf="@id/add_halts"
+            tools:ignore="ContentDescription" />
+
+        <View
+            android:layout_width="20dp"
+            android:layout_height="0dp"
+            android:background="@drawable/dotted_line"
+            app:layout_constraintBottom_toTopOf="@id/input_destination"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/add_halts" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Destination location"
+            android:textColor="@color/blue_400"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/input_destination"
+            app:layout_constraintHorizontal_bias="0.01"
+            app:layout_constraintLeft_toLeftOf="@id/input_destination"
+            app:layout_constraintRight_toRightOf="@id/input_destination" />
+
+        <EditText
+            android:id="@+id/input_destination"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:background="@drawable/input_shape"
+            android:hint="@string/source_location"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:maxLength="50"
+            android:paddingStart="35dp"
+            android:paddingEnd="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/blue_800"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintBottom_toTopOf="@id/date_container"
+            app:layout_constraintHorizontal_bias="0.49"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/add_halts"
+            app:layout_constraintVertical_bias="0.8"
+            app:layout_constraintWidth_percent=".87" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_saveplans"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bg"
+            android:elevation="10dp"
+            android:text="@string/save_plan"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.622"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/date_container"
+            app:layout_constraintWidth_percent=".87" />
+
+        <LinearLayout
+            android:id="@+id/date_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/btn_saveplans"
+            app:layout_constraintTop_toBottomOf="@id/input_destination">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/departure"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/ic_edit_calendar"
+                    app:tint="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="4dp"
+                    android:text="@string/departure_date"
+                    android:layout_weight="1"
+                    android:textColor="@color/blue_400"
+                    android:textStyle="bold"/>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/expected_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/ic_edit_calendar"
+                    app:tint="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="4dp"
+                    android:text="@string/expected_date"
+                    android:layout_weight="1"
+                    android:textColor="@color/blue_400"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/input_departure"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/input_shape"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/blue_800"
+                    android:textColorHint="@color/white"
+                    android:textSize="18sp"/>
+
+                <EditText
+                    android:id="@+id/input_expected_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/input_shape"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/blue_800"
+                    android:textColorHint="@color/white"
+                    android:textSize="18sp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="1300"
+        motion:autoTransition="animateToEnd">
+       <KeyFrameSet>
+           <KeyAttribute
+               motion:motionTarget="@+id/bounceBg"
+               motion:framePosition="50"
+               android:translationY="-400dp"
+               android:scaleY="-2" />
+           <KeyAttribute
+               motion:motionTarget="@+id/bounceBg"
+               motion:framePosition="50"
+               android:translationX="400dp" />
+           <KeyAttribute
+               motion:motionTarget="@+id/bounceBg"
+               motion:framePosition="70"
+               android:scaleY="1" />
+           <KeyAttribute
+               motion:motionTarget="@+id/bounceBg"
+               motion:framePosition="85"
+               android:translationY="20dp" />
+           <KeyAttribute
+               motion:motionTarget="@+id/bounceBg"
+               motion:framePosition="85"
+               android:scaleY="0.6" />
+           <KeyAttribute
+               motion:motionTarget="@+id/bounceBg"
+               motion:framePosition="92"
+               android:scaleY="1" />
+           <KeyAttribute
+               motion:motionTarget="@+id/bounceBg"
+               motion:framePosition="100"
+               android:scaleX="3" />
+           <KeyAttribute
+               motion:motionTarget="@+id/bounceBg"
+               motion:framePosition="100"
+               android:scaleY="3" />
+           <KeyAttribute
+               motion:motionTarget="@+id/bounceBg"
+               motion:framePosition="100"
+               android:translationY="-70dp" />
+           <KeyAttribute
+               motion:motionTarget="@+id/bounceBg"
+               motion:framePosition="100"
+               android:translationX="-70dp" />
+           <KeyAttribute
+               motion:motionTarget="@+id/bounceBg"
+               motion:framePosition="70"
+               android:scaleX="1" />
+           <KeyAttribute
+               motion:motionTarget="@+id/bounceBg"
+               motion:framePosition="92"
+               android:scaleX="1" />
+           <KeyAttribute
+               motion:motionTarget="@+id/logoText"
+               motion:framePosition="70"
+               android:translationY="400dp" />
+           <KeyAttribute
+               motion:motionTarget="@+id/whiteLogoText"
+               motion:framePosition="70"
+               android:translationY="400dp" />
+           <KeyAttribute
+               motion:motionTarget="@+id/whiteLogoText"
+               motion:framePosition="70"
+               android:alpha="1" />
+       </KeyFrameSet>
+        <OnSwipe motion:maxAcceleration="0.1"
+            motion:maxVelocity="1.63" />
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:id="@+id/constraintLayout"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintHorizontal_bias="0.5"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:scaleX="10"
+            android:scaleY="10" />
+        <Constraint
+            android:id="@+id/foreLogo"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintHorizontal_bias="0.5"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:scaleX="0"
+            android:scaleY="0"
+            android:visibility="invisible"
+            android:alpha="0"
+            motion:transitionEasing="cubic(0,0,1,0)" />
+        <Constraint
+            android:id="@+id/tintLogo"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintHorizontal_bias="0.5"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:scaleX="2"
+            android:scaleY="2"
+            motion:transitionEasing="cubic(0.11,0.98,0.79,1)" />
+        <Constraint
+            android:id="@+id/whiteLogoText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@id/constraintLayout"
+            motion:layout_constraintRight_toRightOf="parent"
+            motion:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="8dp"
+            android:translationY="400dp" />
+        <Constraint
+            android:id="@+id/logoText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@id/constraintLayout"
+            motion:layout_constraintRight_toRightOf="parent"
+            motion:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="8dp"
+            android:translationY="400dp" />
+        <Constraint
+            android:id="@+id/bounceBg"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            motion:layout_constraintLeft_toLeftOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"
+            android:translationX="400dp"
+            android:translationY="-400dp" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:id="@+id/tintLogo"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintHorizontal_bias="0.5"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:scaleX="0"
+            android:scaleY="0"
+            android:visibility="invisible"
+            motion:transitionEasing="cubic(0.89,0,0.85,0.48)" />
+        <Constraint
+            android:id="@+id/constraintLayout"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintHorizontal_bias="0.5"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:scaleX="1.1"
+            android:scaleY="1.1" />
+        <Constraint
+            android:id="@+id/foreLogo"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintHorizontal_bias="0.5"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:scaleX="2"
+            android:scaleY="2"
+            motion:transitionEasing="cubic(0.54,0,0.93,0.39)"
+            android:alpha="1" />
+        <Constraint
+            android:id="@+id/whiteLogoText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@id/constraintLayout"
+            motion:layout_constraintRight_toRightOf="parent"
+            motion:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="8dp"
+            android:alpha="0" />
+    </ConstraintSet>
+</MotionScene>

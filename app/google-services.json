@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "404977261275",
+    "firebase_url": "https://travellers-point-default-rtdb.firebaseio.com",
+    "project_id": "travellers-point",
+    "storage_bucket": "travellers-point.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:404977261275:android:f702502c2dd184c90e8afe",
+        "android_client_info": {
+          "package_name": "com.example.travellerspoint"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "404977261275-eujt6tf516m664pk8obu7oet4ra32eb4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.travellerspoint",
+            "certificate_hash": "03022186ab549b59cbb46649701e617ac6d73d7e"
+          }
+        },
+        {
+          "client_id": "404977261275-8vml9vfogn7u8lb71iveialcp1t16su4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD99qUUJ1WH9f_RjY4HW9LhRESXi2-VNqM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "404977261275-0umvmgpd98bkaaikeilhk3mf3se07ar1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

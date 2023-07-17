@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toolbar_new_post"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@drawable/toolbar_bg"
+    android:theme="?attr/actionBarTheme">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/cancle"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_cross"
+            android:layout_marginEnd="10dp"
+            android:layout_gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/new_post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            android:text="@string/new_post"
+            android:textStyle="bold"
+            android:layout_marginStart="15dp"
+            android:layout_gravity="center_vertical"/>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:id="@+id/done"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_check"
+            android:layout_marginEnd="10dp"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+
+</androidx.appcompat.widget.Toolbar>

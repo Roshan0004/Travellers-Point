@@ -1,0 +1,40 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/LearnAndroidStudio/TravellersPoint/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
+        <entry key="..\:/LearnAndroidStudio/TravellersPoint/app/src/main/res/drawable/bg.xml" value="0.1795" />
+        <entry key="..\:/LearnAndroidStudio/TravellersPoint/app/src/main/res/drawable/bggradient.xml" value="0.1945" />
+        <entry key="..\:/LearnAndroidStudio/TravellersPoint/app/src/main/res/drawable/button_bg.xml" value="0.1785" />
+        <entry key="..\:/LearnAndroidStudio/TravellersPoint/app/src/main/res/drawable/edit_text.xml" value="0.1795" />
+        <entry key="..\:/LearnAndroidStudio/TravellersPoint/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="..\:/LearnAndroidStudio/TravellersPoint/app/src/main/res/drawable/image_overly.xml" value="0.1755" />
+        <entry key="..\:/LearnAndroidStudio/TravellersPoint/app/src/main/res/drawable/round_corner_button.xml" value="0.1935" />
+        <entry key="..\:/LearnAndroidStudio/TravellersPoint/app/src/main/res/drawable/roundcorner.xml" value="0.1785" />
+        <entry key="..\:/LearnAndroidStudio/TravellersPoint/app/src/main/res/drawable/toolbar_bg.xml" value="0.1925" />
+        <entry key="..\:/LearnAndroidStudio/TravellersPoint/app/src/main/res/drawable/triangle_view.xml" value="0.1935" />
+        <entry key="..\:/LearnAndroidStudio/TravellersPoint/app/src/main/res/drawable/upper_round_corner.xml" value="0.1945" />
+        <entry key="..\:/LearnAndroidStudio/TravellersPoint/app/src/main/res/drawable/white_roundcorner_button.xml" value="0.1945" />
+        <entry key="..\:/LearnAndroidStudio/TravellersPoint/app/src/main/res/drawable/wight_floating_action_bg.xml" value="0.1785" />
+        <entry key="..\:/LearnAndroidStudio/TravellersPoint/app/src/main/res/layout/activity_login.xml" value="0.33" />
+        <entry key="..\:/LearnAndroidStudio/TravellersPoint/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/LearnAndroidStudio/TravellersPoint/app/src/main/res/layout/activity_sign_in_page.xml" value="0.1" />
+        <entry key="..\:/LearnAndroidStudio/TravellersPoint/app/src/main/res/layout/activity_signin.xml" value="0.2" />
+        <entry key="..\:/LearnAndroidStudio/TravellersPoint/app/src/main/res/layout/activity_splash_screen.xml" value="0.22" />
+        <entry key="..\:/LearnAndroidStudio/TravellersPoint/app/src/main/res/layout/activity_splash_screen2.xml" value="0.14" />
+        <entry key="..\:/LearnAndroidStudio/TravellersPoint/app/src/main/res/layout/community_fragment.xml" value="0.17239583333333333" />
+        <entry key="..\:/LearnAndroidStudio/TravellersPoint/app/src/main/res/layout/dashboard_fragement.xml" value="0.25" />
+        <entry key="..\:/LearnAndroidStudio/TravellersPoint/app/src/main/res/layout/login_tab_fragment.xml" value="0.22" />
+        <entry key="..\:/LearnAndroidStudio/TravellersPoint/app/src/main/res/layout/signup_tab_fragment.xml" value="0.25" />
+        <entry key="..\:/LearnAndroidStudio/TravellersPoint/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1795" />
+        <entry key="..\:/LearnAndroidStudio/TravellersPoint/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
