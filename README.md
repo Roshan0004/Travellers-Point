@@ -18,38 +18,36 @@
 <h3>Screenshots</h3>
 <table>
   <tr>
-    <td>Splash Screen </td><td><img align="center" src="#" alt="Splash Screen"></td>
+    <td><img height="400" width="200" align="center" src="/IMAGE/Screenshots/1690208907779.jpg" alt="Splash Screen"></td>
+    <td><img height="400" width="200" align="center" src="/IMAGE/Screenshots/1690208907761.jpg" alt="Login Screen"></td>
   </tr>
   <tr>
-    <td>Login Screen </td><td><img align="center" src="#" alt="Login Screen"></td>
+    <td><img height="400" width="200" align="center" src="/IMAGE/Screenshots/1690208907745.jpg" alt="Registration Screen "></td>
+    <td><img align="center" height="400" width="200" src="/IMAGE/Screenshots/1690208907730.jpg" alt="Dashboard "></td>
   </tr>
   <tr>
-    <td>Registration Screen </td><td><img align="center" src="#" alt="Registration Screen "></td>
+    <td><img height="400" width="200" align="center" src="/IMAGE/Screenshots/1690208907715.jpg" alt="Registration Screen "></td>
+    <td><img align="center" height="400" width="200" src="/IMAGE/Screenshots/1690208907696.jpg" alt="Dashboard "></td>
+  </tr>
+
+  <tr>
+    <td><img height="400" width="200" align="center" src="/IMAGE/Screenshots/1690208907630.jpg" alt="Registration Screen "></td>
+    <td><img align="center" height="400" width="200" src="/IMAGE/Screenshots/1690208907656.jpg" alt="Dashboard "></td>
   </tr>
   <tr>
-    <td>Dashboard </td><td><img align="center" src="#" alt="Dashboard "></td>
+    <td><img height="400" width="200" align="center" src="/IMAGE/Screenshots/1690208907604.jpg" alt="Registration Screen "></td>
+    <td><img align="center" height="400" width="200" src="/IMAGE/Screenshots/1690208907576.jpg" alt="Dashboard "></td>
   </tr>
   <tr>
-    <td>Side Menue </td><td><img align="center" src="#" alt="Side Menue "></td>
+    <td><img height="400" width="200" align="center" src="/IMAGE/Screenshots/1690208907556.jpg" alt="Registration Screen "></td>
+    <td><img align="center" height="400" width="200" src="/IMAGE/Screenshots/1690208907537.jpg" alt="Dashboard "></td>
   </tr>
   <tr>
-    <td>More Options </td><td><img align="center" src="#" alt="More Options "></td>
+    <td><img height="400" width="200" align="center" src="/IMAGE/Screenshots/1690208907521.jpg" alt="Registration Screen "></td>
+    <td><img align="center" height="400" width="200" src="/IMAGE/Screenshots/1690208907506.jpg" alt="Dashboard "></td>
   </tr>
-  <tr>
-    <td>Upload Screen </td><td><img align="center" src="#" alt="Upload Screen"></td>
-  </tr>
-  <tr>
-    <td>Community Screen </td><td><img align="center" src="#" alt="Community Screen"></td>
-  </tr>
-  <tr>
-    <td>Planning Screen </td><td><img align="center" src="#" alt="Planning Screen"></td>
-  </tr>
-  <tr>
-    <td>History Screen </td><td><img align="center" src="#" alt="History Screen"></td>
-  </tr>
-  <tr>
-    <td>Safety Screen </td><td><img align="center" src="#" alt="Safety Screen"></td>
-  </tr>
+    
+  
 </table>
 
 <br><br>
